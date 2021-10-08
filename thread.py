@@ -152,7 +152,29 @@ for sale in sales:
 
 #print(total_sales)
 
-print(thread_sold)
+#print(thread_sold)
 
 
 thread_sold_split = []
+
+for combined_thread in thread_sold:
+    if "&" in combined_thread:
+        #split again
+        separated = combined_thread.split("&")
+        for item in separated:
+            thread_sold_split.append(item)
+    else:
+        thread_sold_split.append(combined_thread)
+#print(thread_sold_split)
+
+def color_count(color):
+    count_of_color = thread_sold_split.count(color)
+    return count_of_color
+
+print(color_count('white'))
+
+colors = ['red','yellow','green','white','black','blue','purple']
+
+for color in colors:
+    count = color_count(color)
+    print("Thread shed sold {count} threads of {color} thread today".format(count = count, color = color))
