@@ -1,2 +1,2 @@
 python dictionaries must have a hashble element as the key.
-hashable elements must be immutable. 
+hashable elements must be immutable.
