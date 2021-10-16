@@ -1,2 +1,11 @@
 python dictionaries must have a hashble element as the key.
 hashable elements must be immutable.
+
+
+access object's class variables iwth an object.variable syntax
+
+methods
+  the ifirst argument in a method is always th object calling the method... so we can also access the objects class variables
+  object.method(variable) is syntax to call an objects method
+
+constructors are object methods ust to prepare an object while being instatiated with the def __init__(self, ..) syntax
