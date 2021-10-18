@@ -9,3 +9,6 @@ methods
   object.method(variable) is syntax to call an objects method
 
 constructors are object methods ust to prepare an object while being instatiated with the def __init__(self, ..) syntax
+
+instance variables are no shared by all instances of a class. instead they are variables that are specific to the object they are attached to
+this is different to a class variable
